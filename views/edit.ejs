@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit</title>
+</head>
+<body>
+  <h1>Edit #<%= mongoose.name %>!</h1>
+  <form action="/<%= mongoose.id %>" method='post'>
+    Name: <input type="text" name="name" value="<%= mongoose.name %>">
+    Age: <input type="text" name="age" value="<%= mongoose.age %>">
+    Color: <input type="text" name="color" value="<%= mongoose.color %>">
+    <input type="submit" value="Edit mongoose!">
+  </form>
+  <a href="/">Home</a>
+</body>
+</html>
+
